@@ -1,0 +1,221 @@
+:root {
+  --beforeFooter: 100%;
+  --left-right-wd: 15%;
+}
+
+html {
+  scroll-behavior: smooth !important;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font: 400 16px/1.55 Tahoma;
+}
+
+/*  Tùy chỉnh CSS cho Carousel  */
+.carousel {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  width: auto;
+  height: auto;
+}
+
+.carousel-item>img {
+  width: 100%;
+  height: auto;
+}
+/* @media screen and (max-width: 2560px) {
+  .carousel-item>img {
+    width: 70vw;
+    max-height: 80vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .carousel-item>img {
+    width: 60vw;
+    max-height: 50vh;
+  }
+}
+@media screen and (max-width: 790px) {
+  .carousel-item>img {
+    width: 50vw;
+    max-height: 40vh;
+  }
+}
+@media screen and (max-width: 570px) {
+  .carousel-item>img {
+    width: 60vw;
+    height: 40vh;
+  }
+} */
+.carousel-indicators [data-bs-target]{
+    border: 1px solid #4a4a4a52 !important;
+}
+
+/* change transition duration to control the speed of fade effect */
+.carousel-item .carousel-caption {
+  text-shadow: #000000 1px 2px 4px, #000000 0px 0px 4px, #000000 0px 0px 6px;
+}
+
+.carousel-fade .carousel-inner .carousel-item {
+  opacity: 0;
+  transition: opacity 800ms cubic-bezier(0.7, 0, 0.3, 1) 0s !important;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* Carousel for hot product */
+.hot-product {
+  width: 70%;
+  min-height: 200px;
+  margin: 0 auto;
+}
+
+.hot-product .carousel-item {
+  width: auto;
+  height: 200px;
+}
+
+.hot-product .carousel-item>img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* Banner dưới Slider 1 */
+.banner {
+  width: auto;
+  height: auto;
+}
+
+.banner>img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Sản phẩm bán chạy */
+.best-product {
+  width: 100vw;
+  height: 40px;
+}
+
+.card {
+  align-content: center;
+  justify-content: center;  
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-group {
+  justify-content: space-between;
+}
+
+.card-body .item-header {
+  color: #444;
+  font-weight: 600;
+  font-size: .9rem;
+  height: 90px;
+  overflow: auto;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.card-body .item-price {
+  font-size: .8rem;
+  text-align: center;
+}
+
+/* width */
+.card-body .item-header::-webkit-scrollbar {
+  width: 5px;
+  margin-left: 20px;
+}
+
+/* Track */
+.card-body .item-header::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.card-body .item-header::-webkit-scrollbar-thumb {
+  background: rgb(0, 115, 255);
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+.card-body .item-header::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+
+
+
+.footer {
+  width: 100vw;
+  height: 30px;
+  background-color: aquamarine;
+}
+
+
+
+#lightSlider ul {
+  list-style: none outside none;
+  padding-left: 0;
+  margin-bottom:0;
+}
+#lightSlider li {
+  display: block;
+  float: left;
+  margin-right: 6px;
+  cursor:pointer;
+}
+
+#lightSlider .card{
+  width: auto;
+  height: 100%;
+  margin: 0 10px;
+}
+#lightSlider img {
+  display: block;
+  max-width: 100%;
+}
+
+
+.input-group>input, .input-group-append>button{
+  border-radius: 0% !important;
+}

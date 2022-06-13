@@ -1,0 +1,120 @@
+.header-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+.navbar-light .navbar-nav .nav-link, .navbar-hover-light:hover .navbar-nav .nav-link, .navbar-fixed-light.fixed-top .navbar-nav .nav-link {
+    color: rgba(0,0,0,0.65);
+}
+
+.navbar-brand{
+  padding-left: 25px;
+}
+.nav-item a{
+  text-transform: uppercase;
+}
+
+.nav-item a img{
+    width: 25px;
+    height: 25px;
+    margin: 0 15px;
+}
+
+.navbar-icon-link-badge{
+    position: absolute;
+    top: 5px;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background: #c00;
+    font-size: 0.6rem;
+    line-height: 20px;
+}
+.megamenu{
+  background-color: #7c838aca;
+}
+
+.megamenu-list-item > a{
+    text-decoration: none;
+    color: #343a40;
+    opacity: 0.8;
+    text-transform: capitalize;
+}
+.megamenu-list-item > a:hover{
+    color: #343a40;
+    opacity: 1;
+}
+
+.nav-item a:hover{
+    color: #343a4094 !important;
+}
+
+.nav-item hr{
+    width: 200px;
+}
+
+.r-0{
+    right: 0;
+}
+
+.icon > img{
+  width: 25px;
+  height: 25px;
+}
+
+
+
+ @media (min-width: 768px) {
+    .animate {
+      animation-duration: 0.5s;
+      -webkit-animation-duration: 0.5s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+  
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+  }
+  
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }
